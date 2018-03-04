@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import Particle from './Particle';
 
-import bg from './bg.jpg';
-import clck from './clck.svg';
-import fingr from './fingr.svg';
+import bg from '../images/bg.jpg';
+import clck from '../images/clck.svg';
+import fingr from '../images/fingr.svg';
 
 class Home extends Component {
   constructor() {

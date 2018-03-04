@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import skillData from './datas.json';
+import skillData from '../datas.json';
 
 const skillPercentage = (percent) => {
   if (parseInt(percent) >= 90) {

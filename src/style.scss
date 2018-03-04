@@ -66,8 +66,9 @@ body,button,div,h1,h2,h3,h4,h5,h6,html,input,li,ol,p,span,table,ul{margin:0;padd
 
 .homepage {
   background-color: #512C68;
+  background-position: top right;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   color: #fff;
   height: 100%;
   position: fixed;
