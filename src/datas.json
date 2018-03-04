@@ -1,0 +1,13 @@
+{
+  "skills": [
+    {"name": "HTML/HTML5", "color": "#e74c3c", "width": "95%"},
+    {"name": "CSS/CSS3", "color": "#2980b9", "width": "87%"},
+    {"name": "SCSS/LESS", "color": "#8e44ad", "width": "79%"},
+    {"name": "Responsive", "color": "#4834d4", "width": "84%"},
+    {"name": "Javascript", "color": "#27ae60", "width": "79%"},
+    {"name": "JQuery", "color": "#6ab04c", "width": "79%"},
+    {"name": "ES6", "color": "#1abc9c", "width": "65%"},
+    {"name": "ReactJS", "color": "#d35400", "width": "65%"},
+    {"name": "Wordpress", "color": "#1abc9c", "width": "71%"}
+  ]
+}
