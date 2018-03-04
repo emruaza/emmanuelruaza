@@ -11,6 +11,7 @@ class Home extends Component {
     super();
 
     this.state = {
+      mountedHeight: false,
       redirect: false,
       showdv: false
     }
@@ -27,6 +28,12 @@ class Home extends Component {
     }, 1010);
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ mountedHeight: true })
+    }, 500);
+  }
+
   render() {
     if (this.state.redirect) {
       return <Redirect push to="/about-me" />
@@ -35,16 +42,16 @@ class Home extends Component {
     return(
       <div id="custBG" className="homepage" style={{backgroundImage: "url("+bg+")"}}>
         <div className="clearfix homepage__container">
-          <h1>
-            <span className="hind homepage__introduction">Hello, I'm <strong>emman</strong> a</span>
-            <p className="karma homepage__passionate-wrap"><span className="homepage__passion-txt">Passionate</span><br/>Web Developer.</p>
-          </h1>
-          <p className="hind homepage__intro-skills">
-            Front End Developer <span className="homepage__intro-spacer">|</span> Wordpress <span className="homepage__intro-spacer">|</span> Ruby on Rails
-          </p>
+          <div className="homepage__border-left" style={{height: this.state.mountedHeight ? "100%" : ""}}></div>
+          <h1 className="karma homepage__header">Hello! I'm Emman.</h1>
+          <h2 className="hind homepage__header--big">
+            A passionate
+            <br/>
+            <span className="homepage__header--bigger">Front-end Developer</span>
+          </h2>
         </div>
         <span onClick={this.handleClick} className="hind text-center pulse homepage__anchor">
-          About Me<br/>
+          ABOUT ME<br/>
           <img src={clck} alt="click" className="clickEffect homepage__icon-click"/>
           <img src={fingr} alt="click homepage__icon-finger"/>
         </span>
